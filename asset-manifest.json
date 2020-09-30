@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/argon/static/css/main.7a1c7b57.chunk.css",
+    "main.js": "/argon/static/js/main.7352ec02.chunk.js",
+    "main.js.map": "/argon/static/js/main.7352ec02.chunk.js.map",
+    "runtime-main.js": "/argon/static/js/runtime-main.b3c500cf.js",
+    "runtime-main.js.map": "/argon/static/js/runtime-main.b3c500cf.js.map",
+    "static/js/2.b420306d.chunk.js": "/argon/static/js/2.b420306d.chunk.js",
+    "static/js/2.b420306d.chunk.js.map": "/argon/static/js/2.b420306d.chunk.js.map",
+    "index.html": "/argon/index.html",
+    "precache-manifest.90017073a48c44c74410be2e39221bfc.js": "/argon/precache-manifest.90017073a48c44c74410be2e39221bfc.js",
+    "service-worker.js": "/argon/service-worker.js",
+    "static/css/main.7a1c7b57.chunk.css.map": "/argon/static/css/main.7a1c7b57.chunk.css.map",
+    "static/js/2.b420306d.chunk.js.LICENSE.txt": "/argon/static/js/2.b420306d.chunk.js.LICENSE.txt",
+    "static/media/argon-react-white.png": "/argon/static/media/argon-react-white.275a2629.png",
+    "static/media/argon-react.png": "/argon/static/media/argon-react.f38ddea9.png",
+    "static/media/font-awesome.min.css": "/argon/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/nqobile-vundla-zOt6a59k2BE-unsplash.jpg": "/argon/static/media/nqobile-vundla-zOt6a59k2BE-unsplash.3fc9f001.jpg",
+    "static/media/nucleo.css": "/argon/static/media/nucleo-icons.f82ec6ba.ttf",
+    "static/media/promo-1.png": "/argon/static/media/promo-1.75f7ab18.png",
+    "static/media/undraw_people_tax5.svg": "/argon/static/media/undraw_people_tax5.41f8b740.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3c500cf.js",
+    "static/js/2.b420306d.chunk.js",
+    "static/css/main.7a1c7b57.chunk.css",
+    "static/js/main.7352ec02.chunk.js"
+  ]
+}
