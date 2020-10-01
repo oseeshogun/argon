@@ -4,7 +4,6 @@ import {
   Button,
   UncontrolledCollapse,
   DropdownMenu,
-  DropdownItem,
   DropdownToggle,
   UncontrolledDropdown,
   Media,
@@ -88,10 +87,9 @@ function NavBar(props) {
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-menu-xl">
                     <div className="dropdown-menu-inner">
-                      <Media
+                      <Link
                         className="d-flex align-items-center"
-                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/overview?ref=adsr-navbar"
-                        target="_blank"
+                        to="/createpromotion/"
                       >
                         <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
                           <i className="ni ni-spaceship" />
@@ -104,7 +102,7 @@ function NavBar(props) {
                             Ajouter une nouvelle promotion dans la collection de l'université.
                           </p>
                         </Media>
-                      </Media>
+                      </Link>
                       <Media
                         className="d-flex align-items-center"
                         href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/colors?ref=adsr-navbar"
