@@ -17,7 +17,7 @@ function App() {
       <PromotionsProvider>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={Landing} />
+            <Route path="/" component={Landing} />
             <Route exact path="/createpromotion/" component={CreatePromotion} />
             <Route exact path="/promotions/" component={PromotionsList} />
           </Switch>
