@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Link } from 'react-router-dom';
 // nodejs library that concatenates classes
 import classnames from "classnames";
 
@@ -61,7 +62,7 @@ function Landing(props) {
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
                         color="info"
-                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
+                        href="/createpromotion/"
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-plus" />
@@ -73,7 +74,7 @@ function Landing(props) {
                       <Button
                         className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                         color="default"
-                        href="/#"
+                        href="/signup/"
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-user-plus" />
@@ -138,8 +139,7 @@ function Landing(props) {
                         <Button
                           className="mt-4"
                           color="primary"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/promotions/"
                         >
                           Explorer
                         </Button>
@@ -175,8 +175,7 @@ function Landing(props) {
                         <Button
                           className="mt-4"
                           color="success"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/promotions/"
                         >
                           Explorer
                         </Button>
@@ -212,8 +211,7 @@ function Landing(props) {
                         <Button
                           className="mt-4"
                           color="warning"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="/promotions/"
                         >
                           Explorer
                         </Button>
@@ -437,13 +435,12 @@ function Landing(props) {
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Eius animi assumenda nihil quas minus!
                         </p>
-                        <a
+                        <Link
                           className="text-warning"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          to="/createpromotion/"
                         >
                           Créer une promotion
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </CardBody>

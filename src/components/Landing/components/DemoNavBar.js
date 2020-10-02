@@ -23,7 +23,7 @@ import {
 import argonReactWhite from '../../../assets/img/brand/argon-react-white.png';
 import argonReact from '../../../assets/img/brand/argon-react.png';
 
-function NavBar(props) {
+function NavBar({ hideGetStarted }) {
     // const [collapseOpen, setCollapseOpen] = useState(false);
     const [collapseClasses, setCollapseClasses] = useState("");
 
@@ -79,7 +79,7 @@ function NavBar(props) {
                   </Col>
                 </Row>
               </div>
-              <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+              {!hideGetStarted && <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                 <UncontrolledDropdown nav>
                   <DropdownToggle nav>
                     <i className="ni ni-ui-04 d-lg-none mr-1" />
@@ -103,10 +103,9 @@ function NavBar(props) {
                           </p>
                         </Media>
                       </Link>
-                      <Media
+                      <Link
                         className="d-flex align-items-center"
-                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/colors?ref=adsr-navbar"
-                        target="_blank"
+                        to="/promotions/"
                       >
                         <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
                           <i className="ni ni-palette" />
@@ -119,7 +118,7 @@ function NavBar(props) {
                             Explorer une promotion et voir vos amis du temps universitaires.
                           </p>
                         </Media>
-                      </Media>
+                      </Link>
                       <Media
                         className="d-flex align-items-center"
                         href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
@@ -140,32 +139,13 @@ function NavBar(props) {
                     </div>
                   </DropdownMenu>
                 </UncontrolledDropdown>
-                {/* <UncontrolledDropdown nav>
-                  <DropdownToggle nav>
-                    <i className="ni ni-collection d-lg-none mr-1" />
-                    <span className="nav-link-inner--text">Examples</span>
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem to="/landing-page" tag={Link}>
-                      Landing
-                    </DropdownItem>
-                    <DropdownItem to="/profile-page" tag={Link}>
-                      Profile
-                    </DropdownItem>
-                    <DropdownItem to="/login-page" tag={Link}>
-                      Login
-                    </DropdownItem>
-                    <DropdownItem to="/register-page" tag={Link}>
-                      Register
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown> */}
-              </Nav>
+               
+              </Nav> }
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="https://www.facebook.com/creativetim"
+                    href="https://www.facebook.com/"
                     id="tooltip333589074"
                     target="_blank"
                   >
@@ -181,7 +161,7 @@ function NavBar(props) {
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="https://www.instagram.com/creativetimofficial"
+                    href="https://www.instagram.com/"
                     id="tooltip356693867"
                     target="_blank"
                   >
@@ -197,7 +177,7 @@ function NavBar(props) {
                 <NavItem>
                   <NavLink
                     className="nav-link-icon"
-                    href="https://twitter.com/creativetim"
+                    href="https://twitter.com/"
                     id="tooltip184698705"
                     target="_blank"
                   >
@@ -214,7 +194,7 @@ function NavBar(props) {
                   <Button
                     className="btn-neutral btn-icon"
                     color="default"
-                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-navbar"
+                    href="/signin/"
                     target="_blank"
                   >
                     <span className="btn-inner--icon">
