@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55382b66e1c915416c169e4600a9091f",
+    "revision": "f6763a4fc3fe492a97164df97364a654",
     "url": "/argon/index.html"
   },
   {
-    "revision": "b498ca98356564d68507",
+    "revision": "d973d3ee2fc736876aca",
     "url": "/argon/static/css/10.26322a97.chunk.css"
   },
   {
-    "revision": "c66aaf76e6f96dac4e99",
+    "revision": "d3c00dddca4d0448d261",
     "url": "/argon/static/css/7.eeaaac21.chunk.css"
   },
   {
-    "revision": "5e295d4203f192a5f2dc",
+    "revision": "e427bc494bd2a199433a",
     "url": "/argon/static/css/main.928d1115.chunk.css"
   },
   {
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/argon/static/js/1.1c253f10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b498ca98356564d68507",
-    "url": "/argon/static/js/10.b11542fd.chunk.js"
+    "revision": "d973d3ee2fc736876aca",
+    "url": "/argon/static/js/10.f48c3d0e.chunk.js"
   },
   {
-    "revision": "84eaec97cb933e76e458",
-    "url": "/argon/static/js/4.eaf87bbf.chunk.js"
+    "revision": "04060975df02360d69dc",
+    "url": "/argon/static/js/4.cee99d18.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/argon/static/js/4.eaf87bbf.chunk.js.LICENSE.txt"
+    "url": "/argon/static/js/4.cee99d18.chunk.js.LICENSE.txt"
   },
   {
     "revision": "8c5dff1f5d7b93424e06",
@@ -52,28 +52,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/argon/static/js/5.df086d07.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d03d1aff27c064810128",
-    "url": "/argon/static/js/6.8c8dddf6.chunk.js"
+    "revision": "40df184b10a57994211d",
+    "url": "/argon/static/js/6.5f3c2fbc.chunk.js"
   },
   {
-    "revision": "c66aaf76e6f96dac4e99",
-    "url": "/argon/static/js/7.c4ab7a97.chunk.js"
+    "revision": "d3c00dddca4d0448d261",
+    "url": "/argon/static/js/7.4c30d5ca.chunk.js"
   },
   {
-    "revision": "914653fed17ae054a15e",
-    "url": "/argon/static/js/8.bfcc894b.chunk.js"
+    "revision": "e42b28e26b1db6c6148d",
+    "url": "/argon/static/js/8.cc5c79a6.chunk.js"
   },
   {
-    "revision": "599ada16c31c99e40dbb",
-    "url": "/argon/static/js/9.7176c9d8.chunk.js"
+    "revision": "f9f62cbe22c806b7b1f7",
+    "url": "/argon/static/js/9.f92ae2e5.chunk.js"
   },
   {
-    "revision": "5e295d4203f192a5f2dc",
-    "url": "/argon/static/js/main.6bcc0250.chunk.js"
+    "revision": "e427bc494bd2a199433a",
+    "url": "/argon/static/js/main.ba1cc2e0.chunk.js"
   },
   {
-    "revision": "c9398b8b0186f6083811",
-    "url": "/argon/static/js/runtime-main.15a5550d.js"
+    "revision": "89fde0222c9b6949731f",
+    "url": "/argon/static/js/runtime-main.a68f7ede.js"
   },
   {
     "revision": "275a2629582aa2af3469364c6748cf38",
