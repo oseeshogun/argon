@@ -59,28 +59,30 @@ function Landing(props) {
                       Sapiente quam eius et voluptate consequatur maiores.
                     </p>
                     <div className="btn-wrapper">
-                      <Button
-                        className="btn-icon mb-3 mb-sm-0"
-                        color="info"
-                        href={process.env.PUBLIC_URL +  "/createpromotion/"}
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <i className="fa fa-plus" />
-                        </span>
-                        <span className="btn-inner--text">
-                          Créer une promotion
-                        </span>
-                      </Button>
-                      <Button
-                        className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                        color="default"
-                        href={process.env.PUBLIC_URL +  "/signup/"}
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <i className="fa fa-user-plus" />
-                        </span>
-                        <span className="btn-inner--text">S'enegistrer</span>
-                      </Button>
+                      <Link to={process.env.PUBLIC_URL +  "/createpromotion/"}>
+                        <Button
+                          className="btn-icon mb-3 mb-sm-0"
+                          color="info"
+                        >
+                          <span className="btn-inner--icon mr-1">
+                            <i className="fa fa-plus" />
+                          </span>
+                          <span className="btn-inner--text">
+                            Créer une promotion
+                          </span>
+                        </Button>
+                      </Link>
+                      <Link to={process.env.PUBLIC_URL +  "/signup/"}>
+                        <Button
+                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
+                          color="default"
+                        >
+                          <span className="btn-inner--icon mr-1">
+                            <i className="fa fa-user-plus" />
+                          </span>
+                          <span className="btn-inner--text">S'enegistrer</span>
+                        </Button>
+                      </Link>
                     </div>
                   </Col>
                 </Row>
