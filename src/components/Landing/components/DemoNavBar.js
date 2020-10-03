@@ -45,7 +45,7 @@ function NavBar({ hideGetStarted }) {
           id="navbar-main"
         >
           <Container>
-            <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
+            <NavbarBrand className="mr-lg-5" to={process.env.PUBLIC_URL +  "/"} tag={Link}>
               <img
                 alt="..."
                 src={argonReactWhite}
