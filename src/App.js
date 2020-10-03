@@ -10,6 +10,9 @@ const CreatePromotion = lazy(() =>
 const PromotionsList = lazy(() =>
   import("./components/PromotionsList/PromotionsList.js")
 );
+const PromotionDetail = lazy(() =>
+  import("./components/PromotionDetail/PromotionDetail.js")
+);
 
 function App() {
   return (
@@ -17,14 +20,16 @@ function App() {
       <PromotionsProvider>
         <BrowserRouter>
           <Switch>
-            <Route path="/" component={Landing} />
-            <Route exact path="/createpromotion/" component={CreatePromotion} />
-            <Route exact path="/promotions/" component={PromotionsList} />
+            <Route exact path={process.env.PUBLIC_URL +  "/createpromotion/"} component={CreatePromotion} />
+            <Route exact path={process.env.PUBLIC_URL + "/promotions/"} component={PromotionsList} />
+            <Route exact path={process.env.PUBLIC_URL + "/promotion/:year"} component={PromotionDetail} />
+            <Route path={process.env.PUBLIC_URL + "/"} component={Landing} />
           </Switch>
         </BrowserRouter>
       </PromotionsProvider>
     </Suspense>
   );
 }
+
 
 export default App;

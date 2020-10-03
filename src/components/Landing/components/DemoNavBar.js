@@ -64,7 +64,7 @@ function NavBar({ hideGetStarted }) {
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
-                    <Link to="/">
+                    <Link to={process.env.PUBLIC_URL +  "/"}>
                       <img
                         alt="..."
                         src={argonReact}
@@ -89,7 +89,7 @@ function NavBar({ hideGetStarted }) {
                     <div className="dropdown-menu-inner">
                       <Link
                         className="d-flex align-items-center"
-                        to="/createpromotion/"
+                        to={process.env.PUBLIC_URL +  "/createpromotion/"}
                       >
                         <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
                           <i className="ni ni-spaceship" />
@@ -105,7 +105,7 @@ function NavBar({ hideGetStarted }) {
                       </Link>
                       <Link
                         className="d-flex align-items-center"
-                        to="/promotions/"
+                        to={process.env.PUBLIC_URL +  "/promotions/"}
                       >
                         <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
                           <i className="ni ni-palette" />
@@ -121,8 +121,7 @@ function NavBar({ hideGetStarted }) {
                       </Link>
                       <Media
                         className="d-flex align-items-center"
-                        href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alert?ref=adsr-navbar"
-                        target="_blank"
+                        href="#"
                       >
                         <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
                           <i className="ni ni-ui-04" />
@@ -194,7 +193,7 @@ function NavBar({ hideGetStarted }) {
                   <Button
                     className="btn-neutral btn-icon"
                     color="default"
-                    href="/signin/"
+                    href={process.env.PUBLIC_URL +  "/signin/"}
                     target="_blank"
                   >
                     <span className="btn-inner--icon">

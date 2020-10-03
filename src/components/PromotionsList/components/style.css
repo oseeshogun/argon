@@ -59,7 +59,6 @@ a:focus {
 	background: none;
 }
 
-.navbar { padding: 0; }
 
 .cd-slider-nav nav { width: 100%; }
 
@@ -87,17 +86,6 @@ a:focus {
 	padding-right: 10px;
 	background-color: rgba(255,255,255,0.7);
 	overflow: auto;
-}
-
-.navbar-toggler {
-	float: right;
-	font-size: 1.75rem;
-	padding: 0.75rem;
-	background: rgba(255,255,255,0.7);
-	border-radius: 0;
-	position: absolute;
-	right: 10px;
-	top: 5px;
 }
 
 button:focus { outline: none; }

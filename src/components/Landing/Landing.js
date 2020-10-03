@@ -62,7 +62,7 @@ function Landing(props) {
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
                         color="info"
-                        href="/createpromotion/"
+                        href={process.env.PUBLIC_URL +  "/createpromotion/"}
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-plus" />
@@ -74,7 +74,7 @@ function Landing(props) {
                       <Button
                         className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                         color="default"
-                        href="/signup/"
+                        href={process.env.PUBLIC_URL +  "/signup/"}
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-user-plus" />
@@ -139,7 +139,7 @@ function Landing(props) {
                         <Button
                           className="mt-4"
                           color="primary"
-                          href="/promotions/"
+                          href={process.env.PUBLIC_URL +  "/promotions/"}
                         >
                           Explorer
                         </Button>
@@ -175,7 +175,7 @@ function Landing(props) {
                         <Button
                           className="mt-4"
                           color="success"
-                          href="/promotions/"
+                          href={process.env.PUBLIC_URL +  "/promotions/"}
                         >
                           Explorer
                         </Button>
@@ -211,7 +211,7 @@ function Landing(props) {
                         <Button
                           className="mt-4"
                           color="warning"
-                          href="/promotions/"
+                          href={process.env.PUBLIC_URL +  "/promotions/"}
                         >
                           Explorer
                         </Button>
@@ -408,13 +408,13 @@ function Landing(props) {
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Eius animi assumenda nihil quas minus!
                         </p>
-                        <a
+                        <Link
                           className="text-success"
-                          href="#pablo"
+                          href={process.env.PUBLIC_URL +  "/promotions/"}
                           onClick={(e) => e.preventDefault()}
                         >
                           Explorer
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </CardBody>
@@ -437,7 +437,7 @@ function Landing(props) {
                         </p>
                         <Link
                           className="text-warning"
-                          to="/createpromotion/"
+                          to={process.env.PUBLIC_URL +  "/createpromotion/"}
                         >
                           Créer une promotion
                         </Link>

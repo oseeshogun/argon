@@ -28,7 +28,7 @@ function CreatePromotion(props) {
     const number = promotionStudents.current.value;
     const description = promotionDesc.current.value;
     addPromotion({ year, number, description });
-    history.push("/promotions/");
+    history.push(process.env.PUBLIC_URL +  "/promotions/");
   };
 
   return (
