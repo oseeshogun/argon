@@ -5,8 +5,8 @@
     "static/js/1.1c253f10.chunk.js": "/argon/static/js/1.1c253f10.chunk.js",
     "static/js/1.1c253f10.chunk.js.map": "/argon/static/js/1.1c253f10.chunk.js.map",
     "main.css": "/argon/static/css/main.928d1115.chunk.css",
-    "main.js": "/argon/static/js/main.ba1cc2e0.chunk.js",
-    "main.js.map": "/argon/static/js/main.ba1cc2e0.chunk.js.map",
+    "main.js": "/argon/static/js/main.1f3fc682.chunk.js",
+    "main.js.map": "/argon/static/js/main.1f3fc682.chunk.js.map",
     "runtime-main.js": "/argon/static/js/runtime-main.a68f7ede.js",
     "runtime-main.js.map": "/argon/static/js/runtime-main.a68f7ede.js.map",
     "static/js/4.cee99d18.chunk.js": "/argon/static/js/4.cee99d18.chunk.js",
@@ -26,7 +26,7 @@
     "static/js/10.f48c3d0e.chunk.js": "/argon/static/js/10.f48c3d0e.chunk.js",
     "static/js/10.f48c3d0e.chunk.js.map": "/argon/static/js/10.f48c3d0e.chunk.js.map",
     "index.html": "/argon/index.html",
-    "precache-manifest.37d75b206797e89e2a1914572e2bd0b1.js": "/argon/precache-manifest.37d75b206797e89e2a1914572e2bd0b1.js",
+    "precache-manifest.ad015e34a11ea3f4283a9841370e4d36.js": "/argon/precache-manifest.ad015e34a11ea3f4283a9841370e4d36.js",
     "service-worker.js": "/argon/service-worker.js",
     "static/css/10.26322a97.chunk.css.map": "/argon/static/css/10.26322a97.chunk.css.map",
     "static/css/7.eeaaac21.chunk.css.map": "/argon/static/css/7.eeaaac21.chunk.css.map",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.a68f7ede.js",
     "static/js/4.cee99d18.chunk.js",
     "static/css/main.928d1115.chunk.css",
-    "static/js/main.ba1cc2e0.chunk.js"
+    "static/js/main.1f3fc682.chunk.js"
   ]
 }
