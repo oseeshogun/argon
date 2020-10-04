@@ -22,10 +22,13 @@ import {
 
 import argonReactWhite from '../../../assets/img/brand/argon-react-white.png';
 import argonReact from '../../../assets/img/brand/argon-react.png';
+import { usePromotions } from '../../../contexts/PromotionsContext.js';
 
 function NavBar({ hideGetStarted }) {
     // const [collapseOpen, setCollapseOpen] = useState(false);
     const [collapseClasses, setCollapseClasses] = useState("");
+
+    const { currentUser } = usePromotions();
 
     const onExiting = () => {
         setCollapseClasses("collapsing-out");
@@ -119,9 +122,9 @@ function NavBar({ hideGetStarted }) {
                           </p>
                         </Media>
                       </Link>
-                      <Media
+                      <Link
                         className="d-flex align-items-center"
-                        href="#"
+                        to={process.env.PUBLIC_URL +  "/profil/"}
                       >
                         <div className="icon icon-shape bg-gradient-warning rounded-circle text-white">
                           <i className="ni ni-ui-04" />
@@ -134,7 +137,7 @@ function NavBar({ hideGetStarted }) {
                             Connctez-vous à votre compte pour modifier votre profil.
                           </p>
                         </Media>
-                      </Media>
+                      </Link>
                     </div>
                   </DropdownMenu>
                 </UncontrolledDropdown>
@@ -190,17 +193,17 @@ function NavBar({ hideGetStarted }) {
                   </UncontrolledTooltip>
                 </NavItem>
                 <NavItem className="d-none d-lg-block ml-lg-4">
-                  <Button
-                    className="btn-neutral btn-icon"
-                    color="default"
-                    href={process.env.PUBLIC_URL +  "/signin/"}
-                    target="_blank"
-                  >
-                    <span className="btn-inner--icon">
-                      <i className="fa fa-sign-in mr-2" />
-                    </span>
-                    <span className="nav-link-inner--text ml-1">Se connecter</span>
-                  </Button>
+                  <Link to={process.env.PUBLIC_URL +  "/signin/"}>
+                    <Button
+                      className="btn-neutral btn-icon"
+                      color="default"
+                    >
+                      <span className="btn-inner--icon">
+                        <i className={!currentUser ? 'fa fa-sign-in mr-2'  : 'fa fa-user mr-2'} />
+                      </span>
+                      <span className="nav-link-inner--text ml-1">{!currentUser ? 'Se connecter' : currentUser.pseudo }</span>
+                    </Button>
+                  </Link>
                 </NavItem>
               </Nav>
             </UncontrolledCollapse>

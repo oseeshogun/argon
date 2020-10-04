@@ -9,6 +9,7 @@ export function usePromotions() {
 
 export function PromotionsProvider({ children }) {
   const [promotions, setPromotions] = useLocalStorage("promotions", []);
+  const [currentUser, setCurrentUser] = useLocalStorage("user", null);
 
   const addPromotion = (data) => {
       console.log("New Promotion ", data);
@@ -16,8 +17,14 @@ export function PromotionsProvider({ children }) {
     console.log("Updated promotions ", [...promotions, data]);
   };
 
+  const setUser = (data) => {
+      console.log("New User ", data);
+      if (data === null) setCurrentUser(null);
+      else setCurrentUser({"pseudo": data});
+  };
+
   return (
-    <PromotionsContext.Provider value={{ promotions, addPromotion }}>
+    <PromotionsContext.Provider value={{ promotions, currentUser, addPromotion, setUser }}>
       {children}
     </PromotionsContext.Provider>
   );

@@ -16,6 +16,15 @@ const PromotionDetail = lazy(() =>
 const StudentDetail = lazy(() => 
   import("./components/PromotionDetail/components/StudentDetail.js")
 );
+const Login = lazy(() => 
+  import("./components/Auth/Login.js")
+);
+const Signup = lazy(() => 
+  import("./components/Auth/Signup.js")
+);
+const Profil = lazy(() => 
+  import("./components/Profil/Profil.js")
+);
 
 function App() {
   return (
@@ -25,8 +34,11 @@ function App() {
           <Switch>
             <Route exact path={process.env.PUBLIC_URL +  "/createpromotion/"} component={CreatePromotion} />
             <Route exact path={process.env.PUBLIC_URL + "/promotions/"} component={PromotionsList} />
+            <Route exact path={process.env.PUBLIC_URL + "/signup/"} component={Signup} />
+            <Route exact path={process.env.PUBLIC_URL + "/signin/"} component={Login} />
+            <Route exact path={process.env.PUBLIC_URL + "/profil/"} component={Profil} />
             <Route exact path={process.env.PUBLIC_URL + "/promotion/:year"} component={PromotionDetail} />
-            <Route exact path={process.env.PUBLIC_URL + "/student/:name"} component={StudentDetail} />
+            <Route exact path={process.env.PUBLIC_URL + "/student/:year/:name"} component={StudentDetail} />
             <Route path={process.env.PUBLIC_URL + "/"} component={Landing} />
           </Switch>
         </BrowserRouter>

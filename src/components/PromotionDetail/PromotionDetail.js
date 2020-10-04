@@ -37,12 +37,7 @@ function PromotionDetail({ match }) {
 									      the card's content.
 									    </Card.Text>
 									    <Link
-									     to={{
-									     		pathname: process.env.PUBLIC_URL + "/student/" + item.name,
-									     		state: {
-											    	promotion: promotion
-											  	}
-											}}>
+									     to={process.env.PUBLIC_URL + "/student/" + promotion.year + '/' + item.name}>
 									    	<Button variant="primary">Voir plus</Button>
 									    </Link>
 									  </Card.Body>

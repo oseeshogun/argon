@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import image from "../../../assets/img/theme/img-1-1200x1000.jpg";
+import image from "../../../assets/img/theme/place-2.jpg";
 import "./style.css";
 
 function Promotion({ promotion }) {

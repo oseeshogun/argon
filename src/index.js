@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -8,7 +9,9 @@ import "./assets/scss/argon-design-system-react.scss?v1.1.0";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  	<HashRouter>
+    	<App />
+  	</HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -39,6 +39,7 @@ function PromotionDetailNavBar({ promotion, onChange, searchDisabled }) {
 			    </Nav>
 			  </Navbar>
 			  <h4 style={{ textAlign: 'center' }} >{promotion.description} </h4>
+			  <hr style={{ width: '50%' }} />
 			</>}
 		</>
 	);

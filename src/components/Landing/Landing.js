@@ -20,11 +20,14 @@ import {
   Col,
 } from "reactstrap";
 import DemoNavBar from "./components/DemoNavBar.js";
+import { usePromotions } from '../../contexts/PromotionsContext.js';
 
 function Landing(props) {
   const [emailFocused, setEmailFocused] = useState(false);
   const [nameFocused, setNameFocused] = useState(false);
   const main = useRef();
+
+  const { currentUser } = usePromotions();
 
   return (
     <>
@@ -72,7 +75,7 @@ function Landing(props) {
                           </span>
                         </Button>
                       </Link>
-                      <Link to={process.env.PUBLIC_URL +  "/signup/"}>
+                      {!currentUser && <Link to={process.env.PUBLIC_URL +  "/signup/"}>
                         <Button
                           className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                           color="default"
@@ -80,9 +83,9 @@ function Landing(props) {
                           <span className="btn-inner--icon mr-1">
                             <i className="fa fa-user-plus" />
                           </span>
-                          <span className="btn-inner--text">S'enegistrer</span>
+                          <span className="btn-inner--text">S'enresgitrer</span>
                         </Button>
-                      </Link>
+                      </Link> }
                     </div>
                   </Col>
                 </Row>
@@ -481,15 +484,16 @@ function Landing(props) {
                     </p>
                   </Col>
                   <Col className="ml-lg-auto" lg="3">
-                    <Button
-                      block
-                      className="btn-white"
-                      color="default"
-                      href="/#"
-                      size="lg"
-                    >
-                      Se connecter
-                    </Button>
+                    <Link to={process.env.PUBLIC_URL +  "/signin/"}>
+                      <Button
+                        block
+                        className="btn-white"
+                        color="default"
+                        size="lg"
+                      >
+                        {!currentUser ? 'Se connecter' : currentUser.pseudo }
+                      </Button>
+                    </Link>
                   </Col>
                 </Row>
               </div>
