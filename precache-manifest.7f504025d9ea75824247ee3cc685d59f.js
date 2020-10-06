@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa1c35202a2b8e3d5f7b5ad2d7df8003",
+    "revision": "f50a88cbc07134651a23dca626292970",
     "url": "/argon/index.html"
   },
   {
-    "revision": "b086624edb50e7dd58fa",
+    "revision": "501c27772e80292bc223",
     "url": "/argon/static/css/10.4cc1ebcd.chunk.css"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/argon/static/css/2.d025dd66.chunk.css"
   },
   {
-    "revision": "62f51d9a78a40b182e9e",
+    "revision": "aa6d0855ce73dc0637d0",
     "url": "/argon/static/css/5.3b477cb1.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/argon/static/js/1.e6286c99.chunk.js"
   },
   {
-    "revision": "b086624edb50e7dd58fa",
-    "url": "/argon/static/js/10.bfb3072e.chunk.js"
+    "revision": "501c27772e80292bc223",
+    "url": "/argon/static/js/10.aac568f6.chunk.js"
   },
   {
     "revision": "ed9b61e9ce1aae0b26d7",
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/argon/static/js/2.be31daa2.chunk.js"
   },
   {
-    "revision": "62f51d9a78a40b182e9e",
-    "url": "/argon/static/js/5.6e990209.chunk.js"
+    "revision": "aa6d0855ce73dc0637d0",
+    "url": "/argon/static/js/5.a2dc0839.chunk.js"
   },
   {
     "revision": "15e845df22b7b13493e0",
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/argon/static/js/main.532e8ba9.chunk.js"
   },
   {
-    "revision": "0483a27cc276b8c1869d",
-    "url": "/argon/static/js/runtime-main.01e5d5a0.js"
+    "revision": "73ace1257b8a51516212",
+    "url": "/argon/static/js/runtime-main.a9e39f87.js"
   },
   {
     "revision": "275a2629582aa2af3469364c6748cf38",
