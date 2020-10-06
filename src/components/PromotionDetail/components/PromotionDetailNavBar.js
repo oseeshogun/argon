@@ -11,7 +11,7 @@ function PromotionDetailNavBar({ promotion, onChange, searchDisabled }) {
 		<>
 			<GlobalNavBar />
 			{!!promotion && <>
-				<Navbar className='mt-5'>
+				<Navbar style={{ marginTop: '70px' }}>
 			    <Navbar.Brand href="#">Promotion {promotion.year} : { promotion.number } étudiants promus</Navbar.Brand>
 			    <Nav className="mr-auto"></Nav>
 			    <Nav className="hide-mobile">
