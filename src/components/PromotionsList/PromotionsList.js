@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import DemoNavBar from "../Landing/components/DemoNavBar";
+import GlobalNavBar from "../Landing/components/GlobalNavBar.js";
 import "./style.css";
 import Promotion from "./components/Promotion";
 import { usePromotions } from "../../contexts/PromotionsContext";
@@ -10,7 +10,7 @@ function PromotionsList(props) {
 
   return (
     <div id="promotions-list">
-      <DemoNavBar hideGetStarted={true} />
+      <GlobalNavBar hideGetStarted={true} />
       <main ref={main}>
         <section className="section section-lg section-shaped pb-250 ml-4 mr-4">
           <div
@@ -27,7 +27,7 @@ function PromotionsList(props) {
             </div>
           </div>
         </section>
-      </main>
+      </main> 
     </div>
   );
 }

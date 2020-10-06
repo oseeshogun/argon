@@ -1,0 +1,12 @@
+.hide-pc{
+	display: none;
+}
+
+@media screen and (max-width: 992px) {
+	.hide-mobile{
+		display: none;
+	}
+	.hide-pc{
+		display: block;
+	}
+}

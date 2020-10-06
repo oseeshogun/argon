@@ -505,8 +505,8 @@ figure.effect-sadie:hover p {
     opacity: 0.8;
 }
 
-.cd-hero-slider h2 { font-size: 1.5em; }
-.cd-hero-slider p.tm-figure-description { font-size: 1.2rem; }
+/*.cd-hero-slider h2 { font-size: 1.5em; }*/
+/*.cd-hero-slider p.tm-figure-description { font-size: .8rem; }*/
 
 .cd-hero-slider .selected .cd-full-width h2.tm-figure-title {
 	margin-bottom: 0;
@@ -514,10 +514,10 @@ figure.effect-sadie:hover p {
 	text-shadow: 2px 2px 6px #000;
 }
 .cd-hero-slider .selected .cd-full-width p.tm-figure-description {
-    font-weight: 600;
-    font-size: 1.5rem;
+    /*font-weight: 600;*/
+    /*font-size: .8rem;*/
     margin: 0;
-    padding: 2em;
+    /*padding: .8em;*/
     opacity: 0;
 	-webkit-transform: translate3d(0,10px,0);
 	transform: translate3d(0,10px,0);

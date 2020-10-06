@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import image from "../../../assets/img/theme/place-2.jpg";
+import image from "../../../assets/img/theme/boxblur.jpg";
 import "./style.css";
 
 function Promotion({ promotion }) {
   console.log("Promotion ", promotion);
   return (
     <Link to={process.env.PUBLIC_URL +  "/promotion/" + promotion.year}>
-      <div className="grid-item">
+      <div className="grid-item p-1">
         <figure className="effect-sadie">
           <img
             src={image}
@@ -21,7 +21,7 @@ function Promotion({ promotion }) {
                 <strong>{promotion.year}</strong>
               </span>
             </h2>
-            <p className="tm-figure-description">{promotion.description}</p>
+            <p className="tm-figure-description" style={{ fontSize: "14px",  }} >{promotion.description}</p>
           </figcaption>
         </figure>
       </div>

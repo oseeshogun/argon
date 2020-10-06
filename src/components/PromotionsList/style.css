@@ -1,7 +1,11 @@
 #promotions-list{
-    height: 100%;
     min-height: 100vh;
-    background: url('../../assets/img/theme/place-2.jpg');
+    /*background: url('../../assets/img/theme/place-2.jpg');*/
     /* background-position: center; */
-	background-size: cover;
+	/*background-size: cover;*/
+}
+
+#navbar-main{
+	background: #448aff !important;
+	padding: 0 !important;
 }
