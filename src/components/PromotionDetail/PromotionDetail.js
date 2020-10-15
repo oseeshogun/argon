@@ -10,7 +10,7 @@ function PromotionDetail({ match }) {
 	const { promotions } = usePromotions();
 	const [search, setSearch] = useState('');
 
-	const promotion = promotions.find(p => p.year === match.params.year);
+	const promotion = promotions.find(p => p.year + "" === match.params.year);
 
 	const items = useMemo(() => {
 		const elements = [];

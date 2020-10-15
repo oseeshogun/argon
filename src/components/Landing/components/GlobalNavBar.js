@@ -145,7 +145,7 @@ function NavBar({ hideGetStarted }) {
                
               </Nav>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                <NavItem>
+                <NavItem id="social-links">
                   <NavLink
                     className="nav-link-icon"
                     href="https://www.facebook.com/"
@@ -160,8 +160,6 @@ function NavBar({ hideGetStarted }) {
                   <UncontrolledTooltip delay={0} target="tooltip333589074">
                     Aimez-nous sur Facebook
                   </UncontrolledTooltip>
-                </NavItem>
-                <NavItem>
                   <NavLink
                     className="nav-link-icon"
                     href="https://www.instagram.com/"
@@ -176,8 +174,6 @@ function NavBar({ hideGetStarted }) {
                   <UncontrolledTooltip delay={0} target="tooltip356693867">
                     Suivez-nous sur Instagram
                   </UncontrolledTooltip>
-                </NavItem>
-                <NavItem>
                   <NavLink
                     className="nav-link-icon"
                     href="https://twitter.com/"

@@ -20,8 +20,8 @@ function PromotionsList(props) {
           >
             <div className="tm-img-gallery-container">
               <div className="tm-img-gallery gallery-one">
-                {promotions.map((promotion) => (
-                  <Promotion promotion={promotion} key={promotion.year} />
+                {promotions.map((promotion, index) => (
+                  <Promotion promotion={promotion} index={index} key={promotion.year} />
                 ))}
               </div>
             </div>
