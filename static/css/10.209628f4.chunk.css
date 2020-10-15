@@ -1,0 +1,2 @@
+#navbar-main{background:#448aff!important;padding:0 10px!important;height:60px}@media (max-width:992px){#navbar-main{padding:0 10px!important;height:min-width}}#social-links,#social-links>a{display:flex;justify-content:center;align-items:center}#social-links>a{width:50px}@media (max-width:992px){#social-links{flex-direction:column}#social-links>a{justify-content:start;width:100%}}.hide-pc{display:none}@media screen and (max-width:992px){.hide-mobile{display:none}.hide-pc{display:block}}
+/*# sourceMappingURL=10.209628f4.chunk.css.map */
